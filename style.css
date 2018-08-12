@@ -1,0 +1,69 @@
+.header{
+    width: 100%;
+    height: 650px;
+    background-image: url('header.png');
+    background-size: cover;
+}
+@media (min-width: 992px){
+
+    .headers{position: absolute;right: 50px;}
+    .header nav{position: relative;}
+    
+}
+@media (max-width: 992px){
+    .header .content h1{font-size: 20px}
+    .row .id{margin-bottom: 20px!important}
+}
+
+.header nav ul li a{color: white;}
+.header nav p span{color: white!important}
+.header nav{border-bottom: 1px solid white}
+
+.header .content{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px
+}
+
+.row .img{
+    background-image: url('https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fe4a823b6c32e6f9002f005d174a106b&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    height: 500px;
+    box-shadow: 1px 1px 14px #999;
+}
+
+.row h2, .con h2{
+    color: #555
+}
+
+.row small{color:#999}
+p[name=skills]{color: #555;font-size: 20px}
+
+div.con{background-color: #eee;}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
